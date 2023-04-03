@@ -5,24 +5,24 @@ import { AiOutlineHome, AiOutlineSearch, AiOutlineUser, AiOutlineSetting } from 
 function BottomNav() {
   return (
     <nav className="fixed bottom-0 left-0 w-full bg-white shadow-md">
-      <ul className="flex justify-around items-center py-3">
-        <li className="w-1/4 text-center">
-          <NavLink to="/">
+      <ul className="flex justify-around items-center py-2">
+        <li className="text-center">
+          <NavLink to="/" className="inline-block">
             <AiOutlineHome className="text-gray-400 text-2xl" />
           </NavLink>
         </li>
-        <li className="w-1/4 text-center">
-          <NavLink to="/search">
+        <li className="text-center">
+          <NavLink to="/search" className="inline-block">
             <AiOutlineSearch className="text-gray-400 text-2xl" />
           </NavLink>
         </li>
-        <li className="w-1/4 text-center">
-          <NavLink to="/profile">
+        <li className="text-center">
+          <NavLink to="/profile" className="inline-block">
             <AiOutlineUser className="text-gray-400 text-2xl" />
           </NavLink>
         </li>
-        <li className="w-1/4 text-center">
-          <NavLink to="/settings">
+        <li className="text-center">
+          <NavLink to="/settings" className="inline-block">
             <AiOutlineSetting className="text-gray-400 text-2xl" />
           </NavLink>
         </li>
