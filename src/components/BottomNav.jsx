@@ -5,7 +5,7 @@ import { AiOutlineHome, AiOutlineSearch, AiOutlineUser, AiOutlineSetting } from 
 function BottomNav() {
   return (
     <nav className="fixed bottom-0 left-0 w-full bg-white shadow-md">
-      <ul className="flex justify-around items-center py-2">
+      <ul className="flex justify-around items-center py-2 h-12">
         <li className="text-center">
           <NavLink to="/" className="inline-block">
             <AiOutlineHome className="text-gray-400 text-2xl" />

@@ -8,6 +8,7 @@ import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage';
 import AssociationsPage from './pages/AssociationsPage';
 import AssociationDetailsPage from './pages/AssociationDetailsPage';
+import CompleteProfilePage from './pages/CompleteProfilePage';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/register" element={<RegisterPage/>}/>
             <Route path="/associations" element={<AssociationsPage/>}/>
             <Route path="/associations/:id" element={<AssociationDetailsPage />} />
+            <Route path="/complete-profile" element={<CompleteProfilePage />} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
