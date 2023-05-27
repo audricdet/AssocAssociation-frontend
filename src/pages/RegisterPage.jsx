@@ -33,7 +33,7 @@ function RegisterPage() {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
+        localStorage.setItem('user_id', data.id);
         navigate('/login');
       })
       .catch((error) => {
@@ -95,7 +95,7 @@ function RegisterPage() {
         </p>
       </form>
     </div>
-  );
+    );
 }
 
 export default RegisterPage;

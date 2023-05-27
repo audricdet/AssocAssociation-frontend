@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BottomNav from '../components/BottomNav';
+import {AiOutlineArrowLeft} from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 function AssociationsPage() {
@@ -15,23 +16,33 @@ function AssociationsPage() {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-center associations-list" style={{ marginBottom: '5rem' }}>
-      {associations.map((assoc) => (
-        <div key={assoc.id} className="w-full md:w-1/2 lg:w-1/3 max-w-sm rounded overflow-hidden shadow-lg m-4">
-          <img className="mx-auto mt-4 h-40 w-40 object-contain" src={assoc.logo} alt={assoc.name} />
-          <div className="text-center px-6 py-4">
-            <div className="font-bold text-xl mb-2">{assoc.name}</div>
-            <button className="bg-assoc hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
+    <body className='bg-assoc-bg font-sans'>
+  <div className='flex justify-center item-center pt-6 bg-assoc'>
+    <div></div>
+    <h1 className='text-gray-100 pb-6'>
+      ASSOCIATIONS
+    </h1>
+  </div>
+  <div className="flex flex-wrap justify-start mb-8 pt-8">
+    {associations.map((assoc) => (
+      <div key={assoc.id} className="w-full md:w-1/2 lg:w-1/3 overflow-hidden px-8">
+        <Link to={`/associations/${assoc.id}`}>
+          <img className="mx-auto w-full border border-gray-200 rounded-xl" src={assoc.logo} alt={assoc.name} />
+        </Link>
+        <div className='flex justify-start pl-8 pt-2 mb-8'>
+          <div >
             <Link to={`/associations/${assoc.id}`}>
-              Get more information
+              <div className="font-sans text-m">{assoc.name}</div>
             </Link>
-            </button>
           </div>
         </div>
-      ))}
-      <BottomNav />
-    </div>
-  );
+      </div>
+    ))}
+  </div>
+  <BottomNav />
+</body>
+
+);
 }
 
 export default AssociationsPage;

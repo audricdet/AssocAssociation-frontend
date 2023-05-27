@@ -5,8 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans : ["Roboto", "sans-serif"]
+      }, 
       colors: {
-        'assoc' : '#183071'
+        'assoc' : '#183071',
+        'assoc-bg' : '#8faadc',
+        'assoc-gray' : '#d4d4e3'
       }
     },
   },
