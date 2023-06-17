@@ -61,9 +61,9 @@ function AssociationDetailsPage() {
 
       <div className="min-h-screen">
       <div className="py-12">
-        <BackButton/>
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
+          <BackButton/>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-assoc text-center">{association.name}</p>
           </div>
           <div className="mt-4">
