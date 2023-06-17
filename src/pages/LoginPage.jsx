@@ -40,7 +40,7 @@ function LoginPage() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="flex flex-col items-center">
-        <img src='../public/images/logo.png' alt="Logo" className="w-32 h-32 mb-8" />
+        <img src='../../public/images/logo.png' alt="Logo" className="w-32 h-32 mb-8" />
         <form className="w-full max-w-sm" onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
             <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
