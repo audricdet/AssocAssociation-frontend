@@ -50,8 +50,7 @@ function EditProfileInfos() {
     })
       .then((response) => response.json())
       .then(() => {
-        // Rediriger vers la page de profil après la mise à jour réussie
-        history.push("/profile");
+        window.location.reload();
       })
       .catch((error) => console.log(error));
   };
