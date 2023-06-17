@@ -11,7 +11,6 @@ import ProfilePage from './pages/ProfilePage';
 import CompleteProfilePage from './pages/CompleteProfilePage';
 import EditProfileInfos from './pages/EditProfilePage';
 import CategoriesList from './pages/CategoriesList';
-import CategoryAssociations from './pages/CategoryAssociations';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +21,7 @@ function App() {
       <AuthProvider>
         <BrowserRouter history={history}>
           <Routes>
+            <Route path="/" element={<LoginPage />}/>
             <Route path="/login" element={<LoginPage />} /> 
             <Route path="/register" element={<RegisterPage/>}/>
             <Route path="/associations" element={<AssociationsPage/>}/>
