@@ -51,8 +51,6 @@ function EditProfileInfos() {
       .then((response) => response.json())
       .then(() => {
         window.location.reload();
-        // Rediriger vers la page de profil après le rafraîchissement
-        window.location.href = "/profile";
       })
       .catch((error) => console.log(error));
   };

@@ -32,7 +32,7 @@ function CompleteProfilePage() {
       })
       .then((data) => {
         console.log(data);
-        navigate('/profile');
+        window.location.reload();
       })
       .catch((error) => {
         console.log(error);
