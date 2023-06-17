@@ -8,7 +8,7 @@
         "headers": [
           {
             "key": "Access-Control-Allow-Origin",
-            "value": "https://assoc-association-frontend.vercel.app, http://localhost:5173"
+            "value": "https://assoc-associations.vercel.app, http://localhost:5173"
           },
           {
             "key": "Access-Control-Allow-Credentials",
