@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import BottomNav from '../components/BottomNav';
-import {AiOutlineArrowLeft} from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import BackButton from '../components/BackButton';
 
 function AssociationsPage() {
   const [associations, setAssociations] = useState([]);
@@ -17,8 +17,7 @@ function AssociationsPage() {
 
   return (
     <body className='bg-assoc-bg font-sans'>
-  <div className='flex justify-center item-center pt-6 bg-assoc'>
-    <div></div>
+    <div className='flex justify-center item-center pt-6 bg-assoc'>
     <h1 className='text-gray-100 pb-6'>
       ASSOCIATIONS
     </h1>

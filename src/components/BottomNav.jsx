@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { AiOutlineHome, AiOutlineSearch, AiOutlineUser, AiOutlineSetting } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineUser, AiOutlineFilter } from 'react-icons/ai';
 
 function BottomNav() {
   return (
@@ -12,8 +12,8 @@ function BottomNav() {
           </NavLink>
         </li>
         <li className="text-center">
-          <NavLink to="/search" className="inline-block">
-            <AiOutlineSearch className="text-assoc-gray text-2xl" />
+          <NavLink to="/categories" className="inline-block">
+            <AiOutlineFilter className="text-assoc-gray text-2xl" />
           </NavLink>
         </li>
         <li className="text-center">
@@ -27,3 +27,4 @@ function BottomNav() {
 }
 
 export default BottomNav;
+
